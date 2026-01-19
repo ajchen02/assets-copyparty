@@ -1,22 +1,51 @@
 {
   "name": "koishi-plugin-assets-copyparty",
   "description": "基于 copyparty 的资源转存服务",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "author": "ajchen",
   "license": "MIT",
-  "scripts": {},
+  "homepage": "https://example.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alice/koishi-plugin-example.git"
+  },
   "keywords": [
+    "bot",
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "assets",
+    "server",
+    "local",
+    "storage"
   ],
-  "devDependencies": {},
+  "koishi": {
+    "category": "storage",
+    "description": {
+      "en": "copyparty assets service",
+      "zh": "使用 copyparty 的存放资源文件"
+    },
+    "service": {
+      "implements": [
+        "assets"
+      ]
+    }
+  },
   "peerDependencies": {
     "koishi": "^4.18.7"
+  },
+  "devDependencies": {
+    "@koishijs/plugin-server": "^3.2.3",
+    "koishi": "^4.17.7"
+  },
+  "dependencies": {
+    "@koishijs/assets": "^1.1.2",
+    "file-type": "^16.5.4"
   }
 }
