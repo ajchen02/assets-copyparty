@@ -89,15 +89,13 @@ namespace CopypartyAssets {
         .description('上传至文件夹')
         .required(),
       password: Schema.string()
-        .description('copyparty 密码（可不填）')
-        .experimental(),
+        .description('copyparty 密码（可不填）'),
       replace: Schema.string()
-        .description('endpoint replace')
-        .hidden(),
+        .description('endpoint replace<br>如果你需要把输出的endpoint替换的话...')
+        .experimental(),
       loggerinfo: Schema.boolean()
         .default(false)
-        .description('日志调试：一般输出<br>提issue时，请开启此功能 并且提供BUG复现日志')
-        .experimental(),
+        .description('输出调试日志<br>提issue时，请开启此功能 并且提供BUG复现操作')
     }),
     Assets.Config,
   ])
@@ -107,13 +105,10 @@ namespace CopypartyAssets {
   
   要使用本插件提供的 assets 服务，你需要先关闭默认开启的 assets-local 插件，然后开启本插件。
 
-  ---
-
   本插件使用 copyparty 实现服务，支持图片、音频、视频和其他文件的上传和存储。
+  你很有可能需要自己架一个...
 
-  ---
-
-  本插件后端服务来自: <a href="https://filebin.net" target="_blank">https://filebin.net</a>
+  本插件后端服务来自: <a href="https://github.com/9001/copyparty" target="_blank">https://github.com/9001/copyparty</a>
 
   ---  
   `
