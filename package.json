@@ -10,10 +10,10 @@
   ],
   "author": "ajchen",
   "license": "MIT",
-  "homepage": "https://example.com",
+  "homepage": "https://github.com/ajchen02/assets-copyparty",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alice/koishi-plugin-example.git"
+    "url": "git+https://github.com/ajchen02/assets-copyparty"
   },
   "keywords": [
     "bot",
